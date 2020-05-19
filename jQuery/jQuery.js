@@ -518,7 +518,7 @@ jQuery(document).ready(function () {
          filter: "blur(0px)"
       }, 400);
    });
-   // burger 
+   // ========= burger ====================================== 
    let burger = $('.burger');
    let show = $('#show');
    let hide = $('#hide');
@@ -536,5 +536,27 @@ jQuery(document).ready(function () {
 
    menu.on('click', function () {
       burger.slideUp(300);
+   });
+
+   //  ==================== go to top btn =================;
+
+   let btnTop = $('#btnTop');
+
+   btnTop.fadeOut();
+
+   $(window).scroll(function () {
+
+      if ($(this).scrollTop() > 100) {
+         btnTop.fadeIn();
+      } else {
+         btnTop.fadeOut();
+      }
+   });
+
+   btnTop.click(function () {
+      $('html , body').animate({
+         scrollTop: 0
+      }, 900);
+
    });
 });

@@ -841,6 +841,10 @@ body {
   .content__img {
     margin-left: 150px;
   }
+  .btn__top {
+    bottom: 35px;
+    right: 35px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -871,6 +875,11 @@ body {
   .blog__text {
     margin-bottom: 35px;
   }
+  .btn__top {
+    position: fixed;
+    bottom: 20px !important;
+    right: 15px !important;
+  }
 }
 
 @media (max-width: 422px) {
@@ -882,6 +891,15 @@ body {
   }
   .offer__btn a {
     padding: 10px 30px;
+  }
+  .btn__top {
+    position: fixed;
+    bottom: 20px !important;
+    right: 15px !important;
+    width: 40px !important;
+    height: 40px !important;
+    line-height: 39px !important;
+    font-size: 30px !important;
   }
 }
 
@@ -942,4 +960,24 @@ body {
 .burger .icon__links a {
   margin: 10px;
   font-size: 28px;
+}
+
+.btn__top {
+  position: fixed;
+  bottom: 45px;
+  right: 45px;
+  color: #fff;
+  font-size: 35px;
+  width: 55px;
+  height: 55px;
+  background-color: #f72464;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 52px;
+  -webkit-transition: all ease-in-out .3s;
+  transition: all ease-in-out .3s;
+}
+
+.btn__top:hover {
+  background-color: #ff6d99;
 }
