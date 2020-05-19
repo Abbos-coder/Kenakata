@@ -524,7 +524,7 @@ jQuery(document).ready(function () {
    let hide = $('#hide');
    let menu = $('ul li a');
 
-   // burger.fadeOut();
+   burger.fadeOut();
 
    show.on('click', function () {
       burger.slideDown(400);
